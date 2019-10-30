@@ -138,6 +138,12 @@
             android:name=".helpers.SleepTimerService">
         </service>
 
+        <receiver android:name=".JacocoInstrument.SMSInstrumentedReceiver">
+            <intent-filter>
+                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
